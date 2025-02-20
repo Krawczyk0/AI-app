@@ -16,9 +16,6 @@ public class HuggingFaceApiService {
     public static final String API_URL=dotenv.get("HUGGING_FACE_URL");
     public static Map<String,String> generate(String prompt){
         try {
-
-
-
             HashMap json=new HashMap<>();
             json.put("inputs",prompt);
             String gson=new Gson().toJson(json);
